@@ -9,7 +9,14 @@
 // For example: greeLong(["bob", "daniel"]) returns ["Hello daniel"]
 
 function greetLong(lst) {
-  // lst is an array of strings
+  const overFive = lst.filter(function(word){
+    return word.length > 3;
+  })
+  
+  const greetings = overFive.map(function (word){
+    return "Hello " + word;
+  })
+  return greetings;
 }
 // -------------------------------------------------------------------------
 console.log('Q7 greetLong()', greetLong(['Scott', 'Bob', 'Ric', 'Jim']));

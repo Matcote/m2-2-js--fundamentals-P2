@@ -54,6 +54,7 @@ const threePlus = words.filter(function(word) {
     return word.lenth > 3;
 
 });
+return threePlus;
 
 ```
 
