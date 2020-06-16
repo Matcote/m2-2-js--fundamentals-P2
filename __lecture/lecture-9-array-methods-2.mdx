@@ -21,6 +21,9 @@ The `.forEach()` method calls a function once for every element of the array.
 ```js
 // Example
 let words = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silence'];
+words.forEach(function(word){
+    console.log(`${word} (${word.length})`);
+})
 ```
 
 ---
@@ -32,6 +35,10 @@ The `.map()` method calls the provided function once for every element in the ar
 ```js
 // Example
 let words = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silence'];
+
+const newWords = words.map(function (word){
+    return word.toUpperCase();
+});
 ```
 
 ---
@@ -43,6 +50,11 @@ The `.filter()` method returns a new array with the values that meet the require
 ```js
 // Example
 let words = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silence'];
+const threePlus = words.filter(function(word) {
+    return word.lenth > 3;
+
+});
+
 ```
 
 ---
@@ -56,6 +68,10 @@ It returns `true` or `false`.
 ```js
 // Example
 let words = ['The', 'large', 'shaggy', 'dog', 'barked', 'at', 'the', 'silence'];
+const x = words.every(function(word) {
+    return word.length > 1;
+});
+console.log(x);
 ```
 
 ---

@@ -18,14 +18,18 @@
 
 ```js
 // Formula for area of rectangle
-
+area is length htimes width
 // Turn that into a more math-like function...
-
+A = length * width
 // Define JavaScript function
-
+const areaRectangle = function(length, width, unit){
+  return '${length * width}${unit}^2`;
+}
+}
 // Call the JavaScript function
+console.log(areaRectangle(20, 10, cm));
 ```
-
+can  put undefined for unit
 ---
 
 ### Example 2
@@ -56,10 +60,22 @@
 
 ```js
 // Q1. Write a function that returns the sum of 3 numbers.
+let sum = function(num1, num2, num3){
+  return num1 + num2 + num3;
+}
+console.log(sum(1, 2, 3));
 
 // Q2. Write a function that returns the square of a number minus twice the number.
+let math = function(num){
+  return num*num - num - num;
+}
+console.log(math(8));
 
 // Q3. Write a function that returns the a person's full name, given their first and last names.
+let fullName = function(first, last){
+  return `${first} ${last}`;
+}
+console.log(fullName('Matthew', 'Cote'));
 ```
 
 ---
@@ -70,6 +86,7 @@
 
 ```js
 // Q4. Write a function that returns the value of the tax for a given amount.
+
 
 // Q5. Write a function that returns the value 42.
 
